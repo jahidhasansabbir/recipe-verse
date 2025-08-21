@@ -18,7 +18,7 @@ const Navbar = () => {
   );
   return (
     <nav className="fixed top-0 left-0 w-full z-50 
-                bg-white/30 backdrop-blur-xs shadow-sm"
+                bg-gradient-to-r from-indigo-100/30 to-purple-100/30 backdrop-blur-2xl shadow-sm"
     >
       <div className="navbar px-0 max-w-[1536px] w-11/12 mx-auto">
         <div className="navbar-start">

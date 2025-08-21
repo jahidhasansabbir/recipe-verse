@@ -1,9 +1,11 @@
+import Slider from "./home/Slider";
 
 
 export default function Home() {
   return (
-    <h1>
-      this is home
-    </h1>
+    <section>
+      <Slider></Slider>
+      
+    </section>
   );
 }

@@ -22,12 +22,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme="light">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gradient-to-r from-indigo-50 to-purple-50 `}
       >
         <header>
           <Navbar />
         </header>
-        <main className="min-h-screen pt-20">{children}</main>
+        <main className="min-h-screen pt-16">{children}</main>
         <footer>
           <Footer />
         </footer>

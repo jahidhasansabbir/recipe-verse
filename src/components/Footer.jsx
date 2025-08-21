@@ -9,7 +9,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-200 text-black py-10 mt-20">
+    <footer className="bg-gradient-to-r from-indigo-100 to-purple-100  text-black py-10 mt-20">
       <div className="max-w-[1536px] w-11/12 mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Brand Section */}
         <div className="flex flex-col space-y-3">
@@ -34,14 +34,14 @@ const Footer = () => {
             <h2 className="font-bold text-lg mb-3">Quick Links</h2>
             <ul className="space-y-2">
               <li>
-                <a href="/" className="hover:text-indigo-500 transition-colors">
+                <a href="/" className="hover:text-indigo-600 transition-colors">
                   Home
                 </a>
               </li>
               <li>
                 <a
                   href="/products"
-                  className="hover:text-indigo-500 transition-colors"
+                  className="hover:text-indigo-600 transition-colors"
                 >
                   Products
                 </a>
@@ -49,7 +49,7 @@ const Footer = () => {
               <li>
                 <a
                   href="/add-product"
-                  className="hover:text-indigo-500 transition-colors"
+                  className="hover:text-indigo-600 transition-colors"
                 >
                   Add Product
                 </a>
@@ -57,7 +57,7 @@ const Footer = () => {
               <li>
                 <a
                   href="/about"
-                  className="hover:text-indigo-500 transition-colors"
+                  className="hover:text-indigo-600 transition-colors"
                 >
                   About Us
                 </a>
@@ -71,16 +71,16 @@ const Footer = () => {
           <div>
             <h2 className="font-bold text-lg mb-3">Follow Us</h2>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-indigo-500 transition-colors">
+              <a href="#" className="hover:text-indigo-600 transition-colors">
                 <FaFacebookF />
               </a>
-              <a href="#" className="hover:text-indigo-500 transition-colors">
+              <a href="#" className="hover:text-indigo-600 transition-colors">
                 <FaTwitter />
               </a>
-              <a href="#" className="hover:text-indigo-500 transition-colors">
+              <a href="#" className="hover:text-indigo-600 transition-colors">
                 <FaInstagram />
               </a>
-              <a href="#" className="hover:text-indigo-500 transition-colors">
+              <a href="#" className="hover:text-indigo-600 transition-colors">
                 <FaYoutube />
               </a>
             </div>
