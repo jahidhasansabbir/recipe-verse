@@ -30,6 +30,7 @@ export default function Slider() {
           src="/banner/banner-1.jpg"
           alt="Banner 1"
           width={1280}
+          priority={false} 
           height={1500}
           className="w-full h-full object-cover"
         />
@@ -56,6 +57,7 @@ export default function Slider() {
           alt="Banner 2"
           width={1280}
           height={1500}
+          priority={false} 
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/50"></div>
@@ -76,6 +78,7 @@ export default function Slider() {
           alt="Banner 3"
           width={1200}
           height={1500}
+          priority={false} 
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/50"></div>

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { FaRegClock } from "react-icons/fa";
+import AuthButton from "./LoginBtn";
 
 const Navbar = () => {
   const links = (
@@ -68,9 +69,7 @@ const Navbar = () => {
 
         {/* Login button */}
         <div className="navbar-end">
-          <a href="#" className="button">
-            Log in
-          </a>
+          <AuthButton/>
         </div>
       </div>
     </nav>
