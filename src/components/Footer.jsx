@@ -31,7 +31,7 @@ const Footer = () => {
         {/* Quick Links */}
         <div className="flex lg:justify-end">
           <div>
-            <h2 className="font-bold text-lg mb-3">Quick Links</h2>
+            <h2 className="font-bold text-lg mb-3 gradient-text">Quick Links</h2>
             <ul className="space-y-2">
               <li>
                 <a href="/" className="hover:text-indigo-600 transition-colors">
@@ -69,7 +69,7 @@ const Footer = () => {
         {/* Social Section */}
         <div className="flex lg:justify-end">
           <div>
-            <h2 className="font-bold text-lg mb-3">Follow Us</h2>
+            <h2 className="font-bold text-lg mb-3 gradient-text">Follow Us</h2>
             <div className="flex space-x-4">
               <a href="#" className="hover:text-indigo-600 transition-colors">
                 <FaFacebookF />

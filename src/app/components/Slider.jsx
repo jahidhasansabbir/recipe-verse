@@ -22,16 +22,16 @@ export default function Slider() {
         disableOnInteraction: false,
       }}
       modules={[ Autoplay]}
-      className="mySwiper rounded-2xl w-11/12 h-[60vh]"
+      className="mySwiper rounded-2xl h-[60vh]"
     >
       {/* Slide 1 */}
       <SwiperSlide className="relative">
         <Image
           src="/banner/banner-1.jpg"
           alt="Banner 1"
-          width={1200}
-          height={600}
-          className="w-full h-auto object-cover"
+          width={1280}
+          height={1500}
+          className="w-full h-full object-cover"
         />
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-black/50"></div>
@@ -54,9 +54,9 @@ export default function Slider() {
         <Image
           src="/banner/banner-2.jpg"
           alt="Banner 2"
-          width={1200}
-          height={600}
-          className="w-full h-auto object-cover"
+          width={1280}
+          height={1500}
+          className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4">
@@ -75,8 +75,8 @@ export default function Slider() {
           src="/banner/banner-3.jpg"
           alt="Banner 3"
           width={1200}
-          height={600}
-          className="w-full h-auto object-cover"
+          height={1500}
+          className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4">

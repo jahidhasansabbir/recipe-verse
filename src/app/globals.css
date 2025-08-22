@@ -16,7 +16,7 @@
   
 }
 .gradient-text{
-  background: linear-gradient(90deg, #2563eb, #9333ea, #ec4899) ; /* Indigo → Purple → Pink */
+  background: linear-gradient(90deg, #533df6, #9810fa) ; /* Indigo → Purple → Pink */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
