@@ -2,8 +2,11 @@ import Link from "next/link";
 import React from "react";
 import { FaRegClock } from "react-icons/fa";
 import AuthButton from "./LoginBtn";
+import { getServerSession } from "next-auth";
+import LogOut from "./LogOut";
 
-const Navbar = () => {
+const Navbar =async () => {
+  const session = await getServerSession();
   const links = (
     <>
       <li>
@@ -12,9 +15,9 @@ const Navbar = () => {
       <li>
         <Link href="/products">Products</Link>
       </li>
-      <li>
+      {session && <li>
         <Link href="/add-product">Add Product</Link>
-      </li>
+      </li>}
     </>
   );
   return (
@@ -69,7 +72,11 @@ const Navbar = () => {
 
         {/* Login button */}
         <div className="navbar-end">
-          <AuthButton/>
+
+
+        {session? <LogOut/>:<AuthButton/>}
+          
+
         </div>
       </div>
     </nav>

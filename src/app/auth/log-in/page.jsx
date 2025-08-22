@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import GoogleLogIn from "../components/GoogleLogIn";
 
 const LoginPage = () => {
   return (
@@ -64,10 +65,9 @@ const LoginPage = () => {
           <span className="text-sm text-gray-400">OR</span>
           <hr className="flex-grow border-gray-300" />
         </div>
-        <button className="w-full border border-gray-300 py-[6px] rounded-md hover:bg-gray-50 transition">
-          Continue with Google
-        </button>
-
+       
+       {/* Google button */}
+        <GoogleLogIn/>
         {/* Register Link */}
         <p className="mt-6 text-center text-gray-500 text-sm">
           Don’t have an account?{" "}

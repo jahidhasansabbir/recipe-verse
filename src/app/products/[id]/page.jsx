@@ -3,8 +3,14 @@ import React from "react";
 import Image from "next/image";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import { FaShoppingCart } from "react-icons/fa";
+import { getServerSession } from "next-auth";
+import { redirect } from "next/navigation";
 
 const page = async ({ params }) => {
+  const session = await getServerSession();
+  if(!session){
+    redirect('/auth/log-in')
+  }
   const { id } = await params;
   const {
     name,

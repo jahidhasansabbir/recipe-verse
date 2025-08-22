@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { FaUser, FaEnvelope, FaLock, FaGoogle, FaImage } from "react-icons/fa";
+import GoogleLogIn from "../components/GoogleLogIn";
 
 const RegisterPage = () => {
   return (
@@ -123,7 +124,7 @@ const RegisterPage = () => {
         </div>
 
         {/* Google Button */}
-
+        <GoogleLogIn/>
         {/* Login Link */}
         <p className="mt-6 text-center text-gray-500 text-sm">
           Already have an account?{" "}

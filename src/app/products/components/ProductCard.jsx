@@ -16,7 +16,6 @@ const ProductCard = ({ product }) => {
           alt={product.name}
           width={1000}
           height={1000}
-          unoptimized
         />
       </figure>
       <div className="card-body flex flex-col justify-between">
