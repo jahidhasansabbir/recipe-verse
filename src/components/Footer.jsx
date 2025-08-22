@@ -9,7 +9,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-indigo-100 to-purple-100  text-black py-10 mt-20">
+    <footer className="bg-gradient-to-r from-indigo-100 to-purple-100  text-black py-10">
       <div className="max-w-[1536px] w-11/12 mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Brand Section */}
         <div className="flex flex-col space-y-3">

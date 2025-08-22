@@ -5,3 +5,9 @@ export async function GET() {
     return Response.json(data);
     
 }
+export async function POST(req) {
+    const productData = await req.json();
+    const data = await connectDb('watches').insertOne(productData)
+    return Response.json(data);
+    
+}
