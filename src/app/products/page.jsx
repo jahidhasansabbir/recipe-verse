@@ -3,7 +3,7 @@ import React from "react";
 import ProductCard from "./components/ProductCard";
 
 const page = async () => {
-  const products = await getData("http://localhost:3000/api/products");
+  const products = await getData(`${process.env.NEXT_PUBLIC_URL}/api/products`);
   return (
     <section className="mx-auto w-11/12 max-w-[1536px]">
       <h2 className="text-3xl md:text-4xl font-extrabold text-center gradient-text mb-4">

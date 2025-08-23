@@ -22,7 +22,7 @@ const page = async ({ params }) => {
     rating,
     totalSells,
     category,
-  } = await getData(`http://localhost:3000/api/products/${id}`);
+  } = await getData(`${process.env.NEXT_PUBLIC_URL}/api/products/${id}`);
   const fallback = "https://iili.io/K9mtpHu.jpg";
   const imageSrc =
     image && /^https?:\/\//i.test(image)

@@ -22,11 +22,11 @@ const Form = () => {
       name, brand, category, price, rating, totalSells, image, description, features
     }
 
-    axios.post('http://localhost:3000/api/products', formData)
-    .then(res=> console.log(res.data))
+    axios.post(`${process.env.NEXT_PUBLIC_URL}/api/products`, formData)
+    .then(res=> alert(res.data))
     .catch(err=>console.log(err))
 
-    // console.log(formData);
+   
     
   };
   return (

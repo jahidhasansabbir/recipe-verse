@@ -10,7 +10,6 @@ const page = async() => {
     redirect("/auth/log-in")
   }
 
-  
 
   return (
     <div className="w-11/12 max-w-[900px] mx-auto py-10">
