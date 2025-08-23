@@ -1,36 +1,110 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# TickTock – Premium Watch Store
 
-## Getting Started
+TickTock is a modern, responsive web application for showcasing and selling premium watches. Built with **Next.js** and **Tailwind CSS**, it offers users a seamless browsing experience, secure authentication, and elegant UI components.
 
-First, run the development server:
+## 🚀 [Live Demo](https://tick-tock-neon.vercel.app/) 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🌟 Features
+
+- **User Authentication:**  
+  Login and Sign Up using **Email/Password** and **Google OAuth**.  
+
+- **Responsive Banner Slider:**  
+  Eye-catching slider on the homepage to highlight featured watches.  
+
+- **Best-Selling Watches Section:**  
+  Displays the most popular watches based on sales.  
+
+- **Why TickTock Section:**  
+  Highlights the unique selling points of TickTock watches.  
+
+- **Customer Reviews:**  
+  Showcase user feedback to build trust and credibility.  
+
+- **Mobile-First Design:**  
+  Fully responsive and optimized for phones, tablets, and desktops.  
+
+## 🎨 Tech Stack
+
+- **Frontend:** Next.js, React, Tailwind CSS, DaisyUI, React Icons, Swiper  
+- **Backend:** Next.js API routes + MongoDB  
+- **Authentication:** NextAuth.js (Email/Password + Google)  
+- **Deployment:** Vercel  
+
+## Route Summary
+
+### Routes
+| Route            | Method | Description                                                           |
+| ---------------- | ------ | --------------------------------------------------------------------- |
+| `/`              | GET    | Homepage with slider, best-selling watches, Why TickTock, and reviews |
+| `/auth/log-in`   | GET    | Login page (Email/Password + Google)                                  |
+| `/auth/register` | GET    | Sign Up page (Email/Password + Google)                                |
+| `/products`      | GET    | List of all watches                                                   |
+| `/products/[id]` | GET    | Single watch details page                                             |
+| `/add-product`   | GET    | Allows authenticated users to add a new watch to the database         |
+
+### API Routes
+| Route                        | Method   | Description                            |
+| ---------------------------- | -------- | -------------------------------------- |
+| `/api/products`              | GET      | Fetch all watches                      |
+| `/api/products`              | POST     | Add a new watch                        |
+| `/api/products/[id]`         | GET      | Fetch details of a single watch        |
+| `/api/best-selling-products` | GET      | Fetch watches with highest total sells |
+| `/api/auth/[...nextauth]`    | POST/GET | NextAuth.js authentication routes      |
+
+## 💻 Getting Started
+
+### Prerequisites
+
+- Node.js >= 18.x  
+- npm or yarn  
+
+### Installation
+
+1. Clone the repository:
+
+```cmd
+git clone https://github.com/jahidhasansabbir/recipe-verse.git
+cd ticktock
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```cmd
+npm install
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+3. Setup environment variables:
+Create a .env file in the root directory with:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```cmd
+MONGO_URI=your_mongodb_connection_string
+NEXTAUTH_SECRET=your_secret
+GOOGLE_CLIENT_ID=your_google_client_id
+GOOGLE_CLIENT_SECRET=your_google_client_secret
+DB_NAME = your_db_name
+NEXTAUTH_URL=http://localhost:3000
+NEXT_PUBLIC_URL = http://localhost:3000
+```
 
-## Learn More
+4. Run the development server:
+```cmd
+npm run dev
+````
 
-To learn more about Next.js, take a look at the following resources:
+Open [http://localhost:3000](http://localhost:3000) to view the app.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ⚡ Notes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- The app uses NextAuth.js for secure authentication.
 
-## Deploy on Vercel
+- MongoDB stores all watch data, reviews, and user info.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Tailwind CSS ensures a clean, modern, and responsive design.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+Thanks for visiting TickTock! 💜
+
+
+
+
+
